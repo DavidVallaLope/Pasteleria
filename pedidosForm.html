@@ -48,8 +48,7 @@
                                 <input type="email" class="form-control" id="email" style="max-width: 500px;">
                             </div>
                         </div>
-                    </div>
-                    <hr class="my-5">
+                        <hr class="my-5">
 
                     <div class="row gx-xl-5">
                         <div class="col-md-4">
@@ -60,10 +59,44 @@
                         <div class="col-md-8">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="mb-3"></div>
+                                    <div class="mb-3">
+                                        <label for="personas" class="form-label">Personas</label>
+                                        <input type="range" class="form-range" min="10" max="150" id="personas" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="sabores" class="form-label">Sabores</label>
+                                        <select class="form-select" aria-label="Seleccionar Sabor">
+                                            <option value="1">Fresa</option>
+                                            <option selected value="2">Vainilla</option>
+                                            <option value="3">Chocolate</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="sabores" class="form-label">Adornos</label>
+                                        <select class="form-select" aria-label="Seleccionar Sabor">
+                                            <option value="1">Velas</option>
+                                            <option selected value="2">Fondant</option>
+                                            <option value="3">Rosas</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    </div>
+                    
+                    <div class="card-footer text-end py-4 px-5 bg-light border-0">
+
+                        <a href="listPedidoCx.html">
+                            <button class="btn btn-link btn-rounded" data-ripple-color="primary">Cancelar</button>
+                            <button class="btn btn-primary btn-rounded">
+                                Enviar
+                            </button>
+                        </a>
                     </div>
                 </form>
             </div>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria </title>
+    <link rel="stylesheet" href="../style/menu.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<header>
+
+</header>
+<body>
+    <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="listPedido.html">Pedidos</a>
+        <a href="inventario.html">Inventario</a>
+    </div>
+    <div class="menuController">
+        <p class="h2" >
+            <i onclick="openNav()" class="fa fa-bars" style="margin: .8em; color: #e2ab91;"></i>
+        </p>
+    </div>
+    <div id="main">
+        <figure class="text-center">
+            <blockquote class="blockquote">
+                <p class="display-3 text-center">Inventario</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                Consulta el inventario actual
+            </figcaption>
+        </figure>
+        <div class="container mb-5 mt-5">
+            <p class="display-6">Sabores</o>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col"># de Pieza</th>
+                        <th scope="col">Articulo</th>
+                        <th scope="col">Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody class="">
+                    <tr>
+                        <th scope="row">10004</th>
+                        <td>Fresa</td>
+                        <td class="text-success"><strong>100</strong></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">10008</th>
+                        <td>Chocolate</td>
+                        <td class="text-success"><strong>125</strong></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">10012</th>
+                        <td>Vainilla</td>
+                        <td class="text-success"><strong>150</strong></td>
+                      </tr>
+                </tbody>
+            </table>
+
+            <hr class="my-5">
+            <p class="display-6">Adornos</o>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col"># de Pieza</th>
+                        <th scope="col">Articulo</th>
+                        <th scope="col">Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody class="">
+                    <tr>
+                        <th scope="row">10004</th>
+                        <td>Velas</td>
+                        <td class="text-success"><strong>90</strong></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">10008</th>
+                        <td>Fondant</td>
+                        <td class="text-success"><strong>100</strong></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">10012</th>
+                        <td>Rosas</td>
+                        <td class="text-success"><strong>150</strong></td>
+                      </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</body>
+<footer>
+
+</footer>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+</script>
+</html>
